@@ -1,0 +1,12 @@
+
+/* Estilos exclusivos de las páginas de información legal */
+.legal-page{max-width:940px;margin:52px auto 72px;padding:0 5%;text-align:left}
+.legal-page h1{font-family:var(--serif);font-size:clamp(2rem,4vw,2.8rem);color:var(--brown);line-height:1.2;margin-bottom:12px}
+.legal-page .legal-intro{color:var(--muted);margin-bottom:30px}
+.legal-page h2{font-family:var(--serif);font-size:1.45rem;color:var(--brown);margin:28px 0 10px}
+.legal-page p,.legal-page li{color:var(--ink);line-height:1.8;font-size:15px}
+.legal-page ul{padding-left:22px;margin:8px 0 16px}
+.legal-page a{color:var(--brown-2);overflow-wrap:anywhere}
+.legal-page .legal-updated{font-size:13px;color:var(--muted);margin-top:30px}
+.legal-page .legal-back{display:inline-block;margin-top:22px}
+@media(max-width:600px){.legal-page{margin:34px auto 50px;padding:0 6%}.legal-page p,.legal-page li{font-size:14px}}

@@ -15,6 +15,12 @@ if (footerContainer) {
           <a href="mailto:info@panaderiavirgendelrocio.com"><i class="fas fa-envelope"></i>Contacto por email</a>
         </div>
         <p class="copyright">&copy; 2026 Panadería-Pastelería Ntra. Sra. Virgen del Rocío. Todos los derechos reservados.</p>
+        <nav class="footer-legal" aria-label="Información legal">
+          <a href="${footerPrefix}aviso-legal.html">Aviso legal</a>
+          <a href="${footerPrefix}privacidad.html">Política de privacidad</a>
+          <a href="${footerPrefix}cookies.html">Política de cookies</a>
+        </nav>
+        <p class="footer-credit">Diseño web realizado por <a href="https://icomtec.es/" target="_blank" rel="noopener noreferrer">ICOMTEC</a></p>
       </div>
     </footer>
   `;
