@@ -1,0 +1,240 @@
+/* ===================================
+   PANES - SECCIÓN TIPOS
+=================================== */
+
+.tipos-pan h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #5a3e2b;
+  text-align: center;
+}
+
+.tipos-pan .intro-pan {
+  font-size: 18px;
+  color: #6b4a33;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+/* GRID PRODUCTOS */
+
+.grid-pan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* TARJETA PRODUCTO */
+
+.pan-item {
+  position: relative;
+  background: #fff3e0;
+  border-radius: 20px;
+  overflow: visible;
+  box-shadow: 0 10px 25px rgba(90, 62, 43, 0.15);
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.pan-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(90, 62, 43, 0.25);
+}
+
+/* ===================================
+   IMÁGENES DE PRODUCTOS
+=================================== */
+
+.pan-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain; /* evita que se corte */
+  padding: 10px;
+  display: block;
+  border-bottom: 4px solid #d2a679;
+  background-color: #f5e6d3;
+  transition: transform 0.3s ease;
+}
+
+/* ZOOM AL PASAR RATÓN */
+
+.pan-item:hover img {
+  transform: scale(1.8);
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* TITULO PRODUCTO */
+
+.pan-item h3 {
+  font-family: "Virgen del Rocio", Georgia, serif;
+  font-size: 22px;
+  margin: 15px 0 10px 0;
+  color: #5a3e2b;
+}
+
+/* TEXTO PRODUCTO */
+
+.pan-item p {
+  font-size: 16px;
+  color: #6b4a33;
+  padding: 0 15px 15px 15px;
+  line-height: 1.5;
+}
+
+/* ===================================
+   BOTÓN CTA
+=================================== */
+
+.cta-pan {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta-pan .btn {
+  font-size: 18px;
+  padding: 14px 32px;
+  background: #8b5e3c;
+  color: #fff8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-pan .btn:hover {
+  background: #d2a679;
+  color: #5a3e2b;
+  transform: translateY(-3px);
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 992px) {
+  .pan-item {
+    max-width: 48%;
+  }
+
+  .pan-item img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pan-item {
+    max-width: 90%;
+  }
+
+  .pan-item img {
+    height: 180px;
+  }
+
+  .cta-pan .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: url("../imagenes/pan-hero.jpeg") center center / cover no-repeat;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(90, 62, 43, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* BOTÓN HERO */
+
+.hero .btn-hero {
+  font-size: 18px;
+  padding: 14px 32px;
+  background: #d2a679;
+  color: #5a3e2b;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-hero:hover {
+  background: #8b5e3c;
+  color: #fff8f0;
+  transform: translateY(-3px);
+}
+
+/* ===================================
+   RESPONSIVE HERO
+=================================== */
+
+@media (max-width: 992px) {
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+/* Acabado visual compartido para las páginas interiores */
+.tipos-pan{padding-top:62px}.tipos-pan h1,.tipos-pan h2{font-family:var(--serif);color:var(--brown)}.tipos-pan .intro-pan{font-family:var(--serif);font-size:17px;color:var(--muted);line-height:1.8;max-width:850px}.tipos-pan .productos-artesanos{margin-top:25px}.tipos-pan .producto{max-width:none;flex:initial}.tipos-pan .producto img{height:225px;object-fit:cover;padding:0;border:0;background:transparent}.tipos-pan .producto:hover img{transform:scale(1.045);position:static;z-index:auto;box-shadow:none}.tipos-pan .producto h3{margin:18px 12px 10px}.cta-pan{margin:25px 0 10px}.cta-pan .btn{font-size:15px;padding:13px 28px;border-radius:999px}
+
+
+/* Mantener la tipografía corporativa también en las tarjetas de producto */
+.tipos-pan,.tipos-pan *:not(i):not(.fa):not([class^="fa-"]):not([class*=" fa-"]){
+  font-family:"Virgen del Rocio",Georgia,serif;
+}

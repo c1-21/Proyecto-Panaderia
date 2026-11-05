@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tartas personalizadas en Almargen | Virgen del Rocío</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Encarga tartas personalizadas en Almargen (Málaga) para cumpleaños y celebraciones. Diseños temáticos, decoración a medida y roscones de Reyes artesanales."
+    />
+    <meta
+      name="keywords"
+      content="pastelería artesanal, roscón de Reyes, tartas personalizadas, tartas San Valentín, dulces de temporada, pastelería para celebraciones"
+    />
+    <meta name="author" content="Panadería-Pastelería Virgen del Rocío, Almargen" />
+
+    <!-- CSS principal y específico -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/stylespan.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+
+    <!-- JSON-LD para productos -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Panadería-Pastelería Nuestra Señora Virgen del Rocío",
+        "description": "Pastelería artesanal con productos especiales para celebraciones: roscones de Reyes, tartas personalizadas y tartas de San Valentín.",
+        "url": "https://panificadoravirgendelrocio.com/",
+        "logo": "../imagenes/logo.png",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Pastelería Especial",
+          "itemListElement": [
+            {
+              "@type": "Product",
+              "name": "Roscón de Reyes",
+              "description": "Tradicional roscón de Reyes, relleno y decorado con frutas escarchadas, ideal para compartir en familia.",
+              "image": "https://tusitioweb.com/imagenes/rosconreyes.jpg"
+            },
+            {
+              "@type": "Product",
+              "name": "Tartas Personalizadas",
+              "description": "Tartas a medida para cumpleaños, bodas o eventos especiales, decoradas según tus preferencias.",
+              "image": "https://tusitioweb.com/imagenes/tartacumple.png"
+            },
+            {
+              "@type": "Product",
+              "name": "Tartas San Valentín",
+              "description": "Tartas personalizadas para San Valentín, incluyendo opciones con forma de corazón.",
+              "image": "https://tusitioweb.com/imagenes/pasteleria.jpeg"
+            }
+          ]
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Header dinámico -->
+    <div id="header-container"></div>
+
+    <!-- Hero con imagen -->
+    <section
+      class="hero"
+      style="background-image: url(&quot;../imagenes/pasteleria.jpeg&quot;)"
+    >
+      <div class="hero-content">
+        <h1>Pastelería Especial Virgen del Rocío</h1>
+        <p>
+          Tartas y dulces de temporada elaborados artesanalmente para tus
+          celebraciones.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección Pastelería Especial -->
+    <section class="container section tipos-pan" id="pasteleria">
+      <h2>Celebraciones y Temporada</h2>
+
+      <p class="intro-pan">
+        Elaboramos pasteles y dulces especiales para fechas señaladas y eventos,
+        manteniendo la calidad y tradición artesanal.
+      </p>
+
+      <div class="productos-artesanos">
+        <!-- Roscón de Reyes -->
+        <div class="producto">
+          <h3>Roscón de Reyes</h3>
+          <img
+            src="../imagenes/rosconreyes.jpg"
+            alt="Roscón de Reyes artesanal relleno y decorado con frutas escarchadas"
+            loading="lazy"
+          />
+          <p>
+            Tradicional roscón de Reyes, relleno y decorado con frutas
+            escarchadas, ideal para compartir en familia.
+          </p>
+        </div>
+
+        <!-- Tartas Personalizadas -->
+        <div class="producto">
+          <h3>Tartas Personalizadas</h3>
+          <img
+            src="../imagenes/tarta-personalizada-cumpleanos.jpeg"
+            alt="Ejemplo de tarta personalizada temática para cumpleaños elaborada por la pastelería en Almargen"
+            loading="lazy"
+          />
+          <p>
+            Tartas a medida para cumpleaños, bodas o eventos especiales,
+            decoradas según tus preferencias.
+          </p>
+        </div>
+
+
+        <div class="producto">
+          <h3>Pastelitos para celebraciones</h3>
+          <img src="../imagenes/pastelitos-artesanos-decorados.jpeg" alt="Pastelitos individuales decorados para celebraciones en Almargen" loading="lazy" />
+          <p>Pequeños dulces decorados para completar cumpleaños, reuniones y mesas dulces.</p>
+        </div>
+
+        <!-- Tartas San Valentín -->
+        <div class="producto">
+          <h3>Tartas San Valentín</h3>
+          <img
+            src="../imagenes/pasteleria.jpeg"
+            alt="Tartas personalizadas para San Valentín, forma de corazón disponible"
+            loading="lazy"
+          />
+          <p>
+            Tartas personalizadas para el día de San Valentín, con varias
+            formas, incluyendo corazón.
+          </p>
+        </div>
+      </div>
+
+      <!-- Llamada a la acción -->
+      <div class="cta-pan">
+        <a href="../index.html#contacto" class="btn">
+          Encarga tu tarta personalizada
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer dinámico -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
