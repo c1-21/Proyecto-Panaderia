@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -9,15 +10,24 @@
     <!-- SEO -->
     <meta
       name="description"
-      content="Panadería en Almargen (Málaga) con pan artesanal, molletes andaluces, chapata, pan integral, viena y pulguitas. Pan fresco y variedad para cada día."
+      content="Panadería Virgen del Rocío en Almargen (Málaga). Pan artesanal, molletes andaluces, chapata, pan integral, viena y pulguitas. Pan fresco y variedad para cada día."
     />
     <meta
       name="keywords"
-      content="pan artesanal, pan chapata, pan integral, molletes andaluces, pan viena, pulguitas, vienas pequeñas, pan fresco, panadería tradicional"
+      content="panadería Almargen, pan artesanal, pan chapata, pan integral, molletes andaluces, pan viena, pulguitas, vienas pequeñas, pan fresco, panadería tradicional"
     />
-    <meta name="author" content="Panadería-Pastelería Virgen del Rocío, Almargen" />
+    <meta
+      name="author"
+      content="Panadería-Pastelería Virgen del Rocío"
+    />
 
-    <!-- CSS principal y específico para la sección de panes -->
+    <!-- URL canónica -->
+    <link
+      rel="canonical"
+      href="https://panaderiavirgendelrocio.com/secciones/pan.html"
+    />
+
+    <!-- CSS principal y específico -->
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/stylespan.css" />
 
@@ -27,60 +37,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Google Fonts -->
-
-    <!-- JSON-LD para panes -->
+    <!-- Datos estructurados del negocio -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Bakery",
-        "name": "Panadería-Pastelería Nuestra Señora Virgen del Rocío",
-        "description": "Panadería artesanal con panes tradicionales elaborados con ingredientes de calidad: chapata, integral, molletes andaluces, vienas, pulguitas y vienas pequeñas.",
-        "url": "https://panificadoravirgendelrocio.com/",
-        "logo": "../imagenes/logo.png",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Tipos de Pan",
-          "itemListElement": [
-            {
-              "@type": "Product",
-              "name": "Pan Chapata",
-              "description": "Corteza crujiente con interior alveolado, perfecto para acompañar comidas o bocadillos.",
-              "image": "../imagenes/chapata.jpeg"
-            },
-            {
-              "@type": "Product",
-              "name": "Pan Integral",
-              "description": "Hecho con harina integral, con sabor intenso y textura firme, ideal para una dieta saludable.",
-              "image": "../imagenes/integral.jpeg"
-            },
-            {
-              "@type": "Product",
-              "name": "Molletes Andaluces",
-              "description": "Pan blando y tierno, perfecto para desayunos y tostadas con aceite o mermelada.",
-              "image": "../imagenes/molletes.jpeg"
-            },
-            {
-              "@type": "Product",
-              "name": "Pan Viena",
-              "description": "Corteza dorada y crujiente con miga firme, ideal para bocadillos o acompañar comidas.",
-              "image": "../imagenes/viena.jpeg"
-            },
-            {
-              "@type": "Product",
-              "name": "Pulguitas",
-              "description": "Pequeños, crujientes por fuera y tiernos por dentro, perfectos para bocadillos o celebraciones.",
-              "image": "../imagenes/pulguitas.jpeg"
-            },
-            {
-              "@type": "Product",
-              "name": "Vienas pequeñas",
-              "description": "Pequeñas y crujientes por fuera, ideales para meriendas o acompañar café.",
-              "image": "../imagenes/vienag.jpeg"
-            }
-          ]
-        }
-      }
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "@id": "https://panaderiavirgendelrocio.com/#bakery",
+      "name": "Panadería-Pastelería Virgen del Rocío",
+      "description": "Panadería artesanal en Almargen, Málaga, especializada en panes tradicionales, molletes andaluces, chapatas, pan integral, viena y pulguitas.",
+      "url": "https://panaderiavirgendelrocio.com/",
+      "logo": "https://panaderiavirgendelrocio.com/imagenes/logo.png",
+      "image": "https://panaderiavirgendelrocio.com/imagenes/panes.jpeg"
+    }
     </script>
   </head>
 
@@ -91,7 +59,7 @@
     <!-- Hero con imagen -->
     <section
       class="hero"
-      style="background-image: url(&quot;../imagenes/panes.jpeg&quot;)"
+      style="background-image: url('../imagenes/panes.jpeg')"
     >
       <div class="hero-content">
         <h1>Descubre Nuestros Panes Artesanales</h1>
@@ -105,18 +73,20 @@
     <!-- Sección Tipos de Pan -->
     <section class="container section tipos-pan" id="tipos-pan">
       <h2>Tipos de Pan que Ofrecemos</h2>
+
       <p class="intro-pan">
         Cada pan se elabora con ingredientes seleccionados y técnicas
         artesanales para ofrecer el mejor sabor y frescura.
       </p>
 
       <div class="productos-artesanos">
+
         <!-- Pan Chapata -->
         <div class="producto">
           <h3>Pan Chapata</h3>
           <img
             src="../imagenes/chapata.jpeg"
-            alt="Pan Chapata con corteza crujiente e interior alveolado"
+            alt="Pan chapata artesanal con corteza crujiente e interior alveolado"
             loading="lazy"
           />
           <p>
@@ -130,7 +100,7 @@
           <h3>Pan Integral</h3>
           <img
             src="../imagenes/integral.jpeg"
-            alt="Pan Integral elaborado con harina integral"
+            alt="Pan integral elaborado con harina integral"
             loading="lazy"
           />
           <p>
@@ -148,8 +118,8 @@
             loading="lazy"
           />
           <p>
-            Pan blando y tierno, perfecto para desayunos y tostadas con aceite o
-            mermelada.
+            Pan blando y tierno, perfecto para desayunos y tostadas con aceite
+            o mermelada.
           </p>
         </div>
 
@@ -158,7 +128,7 @@
           <h3>Viena</h3>
           <img
             src="../imagenes/viena.jpeg"
-            alt="Pan Viena con corteza dorada y crujiente"
+            alt="Pan viena con corteza dorada y crujiente"
             loading="lazy"
           />
           <p>
@@ -167,7 +137,7 @@
           </p>
         </div>
 
-        <!-- Pan Pulguitas -->
+        <!-- Pulguitas -->
         <div class="producto">
           <h3>Pulguitas</h3>
           <img
@@ -194,11 +164,14 @@
             café.
           </p>
         </div>
+
       </div>
 
       <!-- Llamada a la acción -->
       <div class="cta-pan">
-        <a href="../index.html#contacto" class="btn">Encarga tu pan ahora</a>
+        <a href="../index.html#contacto" class="btn">
+          Encarga tu pan ahora
+        </a>
       </div>
     </section>
 

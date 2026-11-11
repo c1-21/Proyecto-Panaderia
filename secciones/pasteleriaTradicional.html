@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -9,13 +10,22 @@
     <!-- SEO -->
     <meta
       name="description"
-      content="Compra y encarga dulces tradicionales en Almargen (Málaga): pestiños, roscos de huevo, magdalenas, tortas de magdalena y pastelería artesanal elaborada con recetas de siempre."
+      content="Descubre los dulces tradicionales de Panadería-Pastelería Virgen del Rocío en Almargen (Málaga): pestiños, roscos de huevo, magdalenas, tortas y pastelería artesanal."
     />
     <meta
       name="keywords"
-      content="panadería artesanal, dulces tradicionales, magdalenas, tortas de aceite, roscos de huevo, pestiños, tortas de magdalena, masa para tortitas"
+      content="panadería Almargen, pastelería Almargen, dulces tradicionales, magdalenas, tortas de aceite, roscos de huevo, pestiños, tortas de magdalena, masa para tortitas"
     />
-    <meta name="author" content="Panadería-Pastelería Virgen del Rocío, Almargen" />
+    <meta
+      name="author"
+      content="Panadería-Pastelería Virgen del Rocío, Almargen"
+    />
+
+    <!-- NUEVO: URL CANÓNICA -->
+    <link
+      rel="canonical"
+      href="https://panaderiavirgendelrocio.com/secciones/pasteleriaTradicional.html"
+    />
 
     <!-- CSS principal y específico -->
     <link rel="stylesheet" href="../styles/styles.css" />
@@ -27,60 +37,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Google Fonts -->
-
-    <!-- JSON-LD para productos -->
+    <!-- DATOS ESTRUCTURADOS: MODIFICADO -->
+    <!-- Se eliminan los Product y se mantiene la entidad Bakery -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Bakery",
-        "name": "Panadería-Pastelería Nuestra Señora Virgen del Rocío",
-        "description": "Dulces tradicionales elaborados con ingredientes naturales: pestiños, roscos de huevo, magdalenas, tortas de magdalena, tortas de aceite y masa para tortitas.",
-        "url": "https://panificadoravirgendelrocio.com/",
-        "logo": "../imagenes/logo.png",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Dulces Tradicionales",
-          "itemListElement": [
-            {
-              "@type": "Product",
-              "name": "Pestiños",
-              "description": "Crujientes por fuera y tiernos por dentro, bañados en miel o azúcar, con delicado aroma a anís y sésamo.",
-              "image": "../imagenes/pestiños.jpeg"
-            },
-            {
-              "@type": "Product",
-              "name": "Roscos de Huevo",
-              "description": "Esponjosos y ligeramente dulces, recuerdan la repostería casera.",
-              "image": "../imagenes/rosquillos.jpeg"
-            },
-            {
-              "@type": "Product",
-              "name": "Magdalenas",
-              "description": "Suaves y aromáticas, elaboradas con ingredientes naturales.",
-              "image": "../imagenes/magdalenas.jpeg"
-            },
-            {
-              "@type": "Product",
-              "name": "Tortas de Magdalena",
-              "description": "Ligera y delicada, con sabor suave y textura que se deshace en la boca.",
-              "image": "../imagenes/tortamadalena.jpeg"
-            },
-            {
-              "@type": "Product",
-              "name": "Masa para Tortitas",
-              "description": "Suave y lista para usar, garantiza tortitas esponjosas y deliciosas en minutos.",
-              "image": "../imagenes/tortamasa.jpg"
-            },
-            {
-              "@type": "Product",
-              "name": "Tortas de Aceite",
-              "description": "Húmedas y tiernas, con sabor delicado y aromático, ideales para acompañar café o chocolate.",
-              "image": "../imagenes/tortamadalena.jpeg"
-            }
-          ]
-        }
-      }
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "@id": "https://panaderiavirgendelrocio.com/#bakery",
+      "name": "Panadería-Pastelería Virgen del Rocío",
+      "description": "Dulces tradicionales y pastelería artesanal elaborados en Almargen, Málaga.",
+      "url": "https://panaderiavirgendelrocio.com/",
+      "logo": "https://panaderiavirgendelrocio.com/imagenes/logo.png",
+      "image": "https://panaderiavirgendelrocio.com/imagenes/roscos.png"
+    }
     </script>
   </head>
 
@@ -91,7 +60,7 @@
     <!-- Hero con imagen -->
     <section
       class="hero"
-      style="background-image: url(&quot;../imagenes/roscos.png&quot;)"
+      style="background-image: url('../imagenes/roscos.png')"
     >
       <div class="hero-content">
         <h1>Panadería Artesanal y Pastelería Tradicional</h1>
@@ -112,6 +81,7 @@
       </p>
 
       <div class="productos-artesanos">
+
         <!-- Pestiños -->
         <div class="producto">
           <h3>Pestiños</h3>
@@ -195,24 +165,50 @@
             acompañar café o chocolate.
           </p>
         </div>
-      </div>
 
-
+        <!-- Tartaletas de frutas -->
         <div class="producto">
           <h3>Tartaletas de frutas</h3>
-          <img src="../imagenes/tartaletas-frutas-artesanas.jpeg" alt="Tartaletas artesanas de fruta fresca y confitada elaboradas en Almargen" loading="lazy" />
-          <p>Tartaletas individuales con fruta, ideales para celebraciones, reuniones y mesas dulces.</p>
+          <img
+            src="../imagenes/tartaletas-frutas-artesanas.jpeg"
+            alt="Tartaletas artesanas de fruta fresca y confitada elaboradas en Almargen"
+            loading="lazy"
+          />
+          <p>
+            Tartaletas individuales con fruta, ideales para celebraciones,
+            reuniones y mesas dulces.
+          </p>
         </div>
+
+        <!-- Mini napolitanas -->
         <div class="producto">
           <h3>Mini napolitanas</h3>
-          <img src="../imagenes/mini-napolitanas-artesanas.jpeg" alt="Mini napolitanas de hojaldre con cobertura dulce y virutas" loading="lazy" />
-          <p>Bollería en formato pequeño, perfecta para compartir en desayunos y meriendas.</p>
+          <img
+            src="../imagenes/mini-napolitanas-artesanas.jpeg"
+            alt="Mini napolitanas de hojaldre con cobertura dulce y virutas"
+            loading="lazy"
+          />
+          <p>
+            Bollería en formato pequeño, perfecta para compartir en desayunos
+            y meriendas.
+          </p>
         </div>
+
+        <!-- Pastelitos decorados -->
         <div class="producto">
           <h3>Pastelitos decorados</h3>
-          <img src="../imagenes/pastelitos-artesanos-decorados.jpeg" alt="Pastelitos artesanos decorados con crema de colores" loading="lazy" />
-          <p>Pastelitos variados preparados para celebraciones y ocasiones especiales.</p>
+          <img
+            src="../imagenes/pastelitos-artesanos-decorados.jpeg"
+            alt="Pastelitos artesanos decorados con crema de colores"
+            loading="lazy"
+          />
+          <p>
+            Pastelitos variados preparados para celebraciones y ocasiones
+            especiales.
+          </p>
         </div>
+
+      </div>
 
       <!-- Llamada a la acción -->
       <div class="cta-pan">

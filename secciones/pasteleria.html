@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -9,13 +10,22 @@
     <!-- SEO -->
     <meta
       name="description"
-      content="Encarga tartas personalizadas en Almargen (Málaga) para cumpleaños y celebraciones. Diseños temáticos, decoración a medida y roscones de Reyes artesanales."
+      content="Encarga tartas personalizadas en Almargen (Málaga) en Panadería-Pastelería Virgen del Rocío. Tartas para cumpleaños, celebraciones, diseños temáticos y dulces artesanales."
     />
     <meta
       name="keywords"
-      content="pastelería artesanal, roscón de Reyes, tartas personalizadas, tartas San Valentín, dulces de temporada, pastelería para celebraciones"
+      content="pastelería Almargen, tartas personalizadas Almargen, tartas cumpleaños, roscón de Reyes, tartas San Valentín, dulces artesanales, pastelería para celebraciones"
     />
-    <meta name="author" content="Panadería-Pastelería Virgen del Rocío, Almargen" />
+    <meta
+      name="author"
+      content="Panadería-Pastelería Virgen del Rocío, Almargen"
+    />
+
+    <!-- NUEVO: URL CANÓNICA -->
+    <link
+      rel="canonical"
+      href="https://panaderiavirgendelrocio.com/secciones/pasteleria.html"
+    />
 
     <!-- CSS principal y específico -->
     <link rel="stylesheet" href="../styles/styles.css" />
@@ -27,42 +37,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Google Fonts -->
-
-    <!-- JSON-LD para productos -->
+    <!-- DATOS ESTRUCTURADOS: MODIFICADO -->
+    <!-- Se eliminan los Product y se identifica el negocio como Bakery -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Bakery",
-        "name": "Panadería-Pastelería Nuestra Señora Virgen del Rocío",
-        "description": "Pastelería artesanal con productos especiales para celebraciones: roscones de Reyes, tartas personalizadas y tartas de San Valentín.",
-        "url": "https://panificadoravirgendelrocio.com/",
-        "logo": "../imagenes/logo.png",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Pastelería Especial",
-          "itemListElement": [
-            {
-              "@type": "Product",
-              "name": "Roscón de Reyes",
-              "description": "Tradicional roscón de Reyes, relleno y decorado con frutas escarchadas, ideal para compartir en familia.",
-              "image": "https://tusitioweb.com/imagenes/rosconreyes.jpg"
-            },
-            {
-              "@type": "Product",
-              "name": "Tartas Personalizadas",
-              "description": "Tartas a medida para cumpleaños, bodas o eventos especiales, decoradas según tus preferencias.",
-              "image": "https://tusitioweb.com/imagenes/tartacumple.png"
-            },
-            {
-              "@type": "Product",
-              "name": "Tartas San Valentín",
-              "description": "Tartas personalizadas para San Valentín, incluyendo opciones con forma de corazón.",
-              "image": "https://tusitioweb.com/imagenes/pasteleria.jpeg"
-            }
-          ]
-        }
-      }
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "@id": "https://panaderiavirgendelrocio.com/#bakery",
+      "name": "Panadería-Pastelería Virgen del Rocío",
+      "description": "Pastelería artesanal en Almargen, Málaga, especializada en tartas personalizadas, roscones de Reyes y dulces para celebraciones.",
+      "url": "https://panaderiavirgendelrocio.com/",
+      "logo": "https://panaderiavirgendelrocio.com/imagenes/logo.png",
+      "image": "https://panaderiavirgendelrocio.com/imagenes/pasteleria.jpeg"
+    }
     </script>
   </head>
 
@@ -73,7 +60,7 @@
     <!-- Hero con imagen -->
     <section
       class="hero"
-      style="background-image: url(&quot;../imagenes/pasteleria.jpeg&quot;)"
+      style="background-image: url('../imagenes/pasteleria.jpeg')"
     >
       <div class="hero-content">
         <h1>Pastelería Especial Virgen del Rocío</h1>
@@ -94,6 +81,7 @@
       </p>
 
       <div class="productos-artesanos">
+
         <!-- Roscón de Reyes -->
         <div class="producto">
           <h3>Roscón de Reyes</h3>
@@ -122,11 +110,18 @@
           </p>
         </div>
 
-
+        <!-- Pastelitos para celebraciones -->
         <div class="producto">
           <h3>Pastelitos para celebraciones</h3>
-          <img src="../imagenes/pastelitos-artesanos-decorados.jpeg" alt="Pastelitos individuales decorados para celebraciones en Almargen" loading="lazy" />
-          <p>Pequeños dulces decorados para completar cumpleaños, reuniones y mesas dulces.</p>
+          <img
+            src="../imagenes/pastelitos-artesanos-decorados.jpeg"
+            alt="Pastelitos individuales decorados para celebraciones en Almargen"
+            loading="lazy"
+          />
+          <p>
+            Pequeños dulces decorados para completar cumpleaños, reuniones y
+            mesas dulces.
+          </p>
         </div>
 
         <!-- Tartas San Valentín -->
@@ -142,6 +137,7 @@
             formas, incluyendo corazón.
           </p>
         </div>
+
       </div>
 
       <!-- Llamada a la acción -->
