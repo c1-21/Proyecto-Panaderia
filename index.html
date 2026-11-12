@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -20,10 +21,14 @@
       name="author"
       content="Panadería Pastelería Ntra Sñra Virgen del Rocío"
     />
+
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#432719" />
-    <meta name="geo.region" content="ES-AN" />
-    <meta name="geo.placename" content="Almargen, Málaga" />
+
+    <!-- URL CANÓNICA: DOMINIO PRINCIPAL CON WWW -->
+    <link
+      rel="canonical"
+      href="https://www.panaderiavirgendelrocio.com/"
+    />
 
     <meta name="theme-color" content="#432719" />
     <meta name="geo.region" content="ES-AN" />
@@ -35,15 +40,23 @@
       property="og:title"
       content="Panadería y Pastelería Virgen del Rocío | Almargen"
     />
+
     <meta
       property="og:description"
       content="Pan fresco diario, pestiños, roscos de huevo, magdalenas y tartas personalizadas en Almargen (Málaga)."
     />
+
     <meta
       property="og:image"
-      content="imagenes/logo.png"
+      content="https://www.panaderiavirgendelrocio.com/imagenes/logo.png"
     />
-    <meta property="og:url" content="https://panificadoravirgendelrocio.com/" />
+
+    <!-- DOMINIO PRINCIPAL CON WWW -->
+    <meta
+      property="og:url"
+      content="https://www.panaderiavirgendelrocio.com/"
+    />
+
     <meta property="og:type" content="website" />
 
     <!-- CSS -->
@@ -55,14 +68,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- Schema SEO -->
+    <!-- DATOS ESTRUCTURADOS DEL NEGOCIO -->
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Bakery",
+        "@id": "https://www.panaderiavirgendelrocio.com/#bakery",
         "name": "Panadería-Pastelería Nuestra Señora Virgen del Rocío",
-        "image": ["imagenes/logo.png", "imagenes/tartaletas-frutas-artesanas.jpeg", "imagenes/tarta-personalizada-cumpleanos.jpeg"],
+        "image": [
+          "https://www.panaderiavirgendelrocio.com/imagenes/logo.png",
+          "https://www.panaderiavirgendelrocio.com/imagenes/tartaletas-frutas-artesanas.jpeg",
+          "https://www.panaderiavirgendelrocio.com/imagenes/tarta-personalizada-cumpleanos.jpeg"
+        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Calle San Andrés, 12",
@@ -72,11 +90,25 @@
           "addressCountry": "ES"
         },
         "telephone": "+34952182615",
-         "openingHours": ["Mo-Fr 06:00-14:00", "Mo-Fr 17:00-20:30", "Sa 06:00-15:00"],
+        "openingHours": [
+          "Mo-Fr 06:00-14:00",
+          "Mo-Fr 17:00-20:30",
+          "Sa 06:00-15:00"
+        ],
         "priceRange": "€",
-        "servesCuisine": ["Panadería", "Pastelería", "Repostería tradicional"],
-        "areaServed": ["Almargen", "Teba", "Campillos", "Cuevas del Becerro", "Málaga"],
-        "url": "https://panificadoravirgendelrocio.com/"
+        "servesCuisine": [
+          "Panadería",
+          "Pastelería",
+          "Repostería tradicional"
+        ],
+        "areaServed": [
+          "Almargen",
+          "Teba",
+          "Campillos",
+          "Cuevas del Becerro",
+          "Málaga"
+        ],
+        "url": "https://www.panaderiavirgendelrocio.com/"
       }
     </script>
   </head>
@@ -184,7 +216,6 @@
       </div>
     </section>
 
-
     <section class="container section especialidades" id="especialidades">
       <span class="eyebrow">Hecho en nuestro obrador</span>
       <h2 class="titulo-seccion">Nuestras especialidades</h2>
@@ -253,7 +284,7 @@
 
           <p>
             <a
-              href="https://www.google.com/maps/place/C.+San+Andr%C3%A9s,+12,+29330+Almargen,+M%C3%A1laga/@37.0038744,-5.0202031,3a,75y,213.68h,90.8t/data=!3m7!1e1!3m5!1s2dCEogz48I9qjTiwJadkPA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-0.7956073523000384%26panoid%3D2dCEogz48I9qjTiwJadkPA%26yaw%3D213.67593117753452!7i16384!8i8192!4m15!1m8!3m7!1s0xd72b28a286bedf3:0x75b54e81dc7dc75f!2sC.+San+Andr%C3%A9s,+12,+29330+Almargen,+M%C3%A1laga!3b1!8m2!3d37.00377!4d-5.02026!16s%2Fg%2F11snpgczb9!3m5!1s0xd72b28a286bedf3:0x75b54e81dc7dc75f!8m2!3d37.00377!4d-5.02026!16s%2Fg%2F11snpgczb9?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/place/C.+San+Andr%C3%A9s,+12,+29330+Almargen,+M%C3%A1laga/@37.0038744,-5.0202031,3a,75y,213.68h,90.8t/data=!3m7!1e1!3m5!1s2dCEogz48I9qjTiwJadkPA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-0.7956073523000384%26panoid%3D2dCEogz48I9qjTiwJadkPA%26yaw%3D213.67593117753452!7i16384!8i8192!4m15!1m8!3m7!1s0xd72b28a286bedf3:0x75b54e81dc7dc75f!2sC.+San+Andr%C3%A9s,+12,+29330+Almargen,+M%C3%A1laga!3b1!8m2!3d37.00377!4d-5.02026!16s%2Fg%2F11snpgczb9!3m5!1m2!1s0xd72b28a286bedf3:0x75b54e81dc7dc75f!8m2!3d37.00377!4d-5.02026!16s%2Fg%2F11snpgczb9?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener"
               style="color: inherit; text-decoration: none"
